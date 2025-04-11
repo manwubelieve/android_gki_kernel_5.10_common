@@ -1,0 +1,23 @@
+name: Build Kernel
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-kernel:
+    name: Build Kernel
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Build
+        uses: ztc1997/kernel_build_action@squash-conf
+        with:
+          kernel-url: https://github.com/ztc1997/android_gki_kernel_5.10_common
+          branch: android12-5.10-lts
+          config: gki_defconfig
+          arch: arm64
+          aosp-gcc: true
+          aosp-clang: true
+          android-version: 12
+          aosp-clang-version: r416183b1
+          anykernel3: true
+          anykernel3-url: https://github.com/ztc1997/AnyKernel3
