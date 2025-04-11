@@ -21,4 +21,4 @@ jobs:
           aosp-clang-version: r416183b1
           anykernel3: true
           anykernel3-url: https://github.com/ztc1997/AnyKernel3
-          curl -LSs "https://raw.githubusercontent.com/ShirkNeko/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-dev
+curl -LSs "https://raw.githubusercontent.com/ShirkNeko/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-dev
